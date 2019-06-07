@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import App from "./components/App/App";
 import Diet from "./components/Diet/Diet";
+import Dieta from "./components/temp/Dieta";
+import Analisis from "./components/temp/Analisis";
+import Progreso from "./components/temp/Progreso";
 import Charts from "./components/Charts/Charts";
 import Home from "./components/Home/Home";
 import Login from "./components/Home/Login";
@@ -31,14 +34,13 @@ render(
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/login" component={Login} />
-        <Route path="/diet" component={Diet} />
-        <Route path="/corporalanalysis" component={CorporalAnalysis}/>
+        <Route path="/diet" component={Dieta} />
+        <Route path="/corporalanalysis" component={Analisis}/>
         <Route path="/signup" component={Signup} />
         <Route path="/agenda" component={Agenda} />
         <Route path="/agendaclient" component={AgendaClient} />
         <Route path="/charts" component={Charts} />
-        <Route path="/transition" component={Transition} />
-        <Route path="/corporalanalysis" component={CorporalAnalysis} />        
+        <Route path="/transition" component={Progreso} />       
         <Route path="/vistaprincipal" component={VistaPrincipal} />
 
         <Route path="/nutritionalBlog" component={NutritionalBlog} />

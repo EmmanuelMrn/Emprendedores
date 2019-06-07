@@ -161,7 +161,7 @@ class VistaPrincipal extends Component {
           <div className="col-4" align="center">
           <div className="col-md-6" align="center">
               <br />
-              <img height='120px' src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"/>
+              <img height='160px' src="https://www.jaimegonzalezmontano.com/wp-content/uploads/2018/08/DrJaime-Perfil.png"/>
           </div>
           <div className="col-md-6" align="center">
             <p className="text-center"><strong>{clientFirst} {clientLast}</strong></p>  
@@ -169,32 +169,37 @@ class VistaPrincipal extends Component {
 
           <div className="col-md-8" align="center">
             <ul className="list-group list-primary">
-              <a className="list-group-item">UserName: {clientUser}</a>
-              <a className="list-group-item">Email: {clientEmail}</a>
-              <a className="list-group-item">Phone: {clientPhone}</a>
-          </ul>
-        </div>   
+              <a className="list-group-item"><b>Nombre:</b> Jose Lopez</a>
+              <a className="list-group-item"><b>Correo:</b> jlopez@uabc.edu.mx</a>
+              <a className="list-group-item"><b>Telefono:</b> 6641112233</a>
+            </ul>
+          </div>
+          <br/>   
+          <div className="col-md-8" align="center">
+            <ul className="list-group list-primary">
+              <a className="list-group-item"><b>Peso:</b> 97.300 kg</a>
+              <a className="list-group-item"><b>Estatura:</b> 1.71 mts</a>
+              <a className="list-group-item"><b>Edad:</b> 46</a>
+            </ul>
+          </div> 
           </div>
 
           
           <div className="col-8">
               <br />
               <div className="col-md-12" align="center">
-                  <h3 align="center">Client Account<p><small>Profile's Content</small></p></h3>
+                  <h3 align="center">Perfil nutricional<p><small>Informacion</small></p></h3>
                   
               </div>
               <br />
               <div className="card text-center">
                   <div className="card-header">
-                      Featured
+                      <b>Grafica de perdida de peso</b>
                   </div>
                   <div className="card-body">
-                         <h5 className="card-title">Content</h5>
-                         <p className="card-text">Information or modules for the profile</p>
-                         <a href="#" className="btn btn-primary">Go somewhere</a>
+                        <img height='420px' width='680px' src="https://www.enpeso.com/wp-content/uploads/2016/06/graf-peso.png"/>
                      </div>
                      <div className="card-footer text-muted">
-                         
                      </div>
               </div>
           </div>
@@ -220,7 +225,7 @@ class VistaPrincipal extends Component {
             {this.ProfileNutritionist()}
         </div>
       );
-    } else if (localStorage.getItem('Rol') == "Cliente") {
+    } else if (1) {
       return (
         <div>
             {this.ProfileClient()}               

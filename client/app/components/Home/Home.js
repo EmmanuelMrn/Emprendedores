@@ -142,7 +142,7 @@ class Home extends Component {
                   </p>
                 </font>
               </div>
-              <a className="btn btn-danger" id="BtnGo"href="/nutritionalBlog">Ir a Blog</a>
+              <a className="btn btn-danger" id="BtnGo" href="/nutritionalBlog">Ir a Blog</a>
             </div>
           </div> 
 

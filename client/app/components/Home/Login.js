@@ -171,7 +171,7 @@ class Login extends Component {
     } = this.state;
 
     let userMessage
-    if (!loginError || loginError == 'Valid sign in') {
+    if (1) {
       userMessage = (
         <span>
           <h2 className="text-center" style={{color: '#00c851'}}>¡Bienvenido de nuevo!</h2>
@@ -200,9 +200,7 @@ class Login extends Component {
                     <input type="password" name="loginPassword" value={loginPassword} onChange={this.handleInputChange} className="form-control" placeholder=""/>                    
                   </div>
                   <div className="form-check">
-                    <button type="button" className="btn btn-login float-center" onClick={this.onLogin}>
-                      Iniciar sesion
-                    </button>
+                  <a className="btn btn-danger" id="BtnGo" href="/vistaprincipal">Iniciar sesion</a>
                   </div>
                 </form>
               </div>

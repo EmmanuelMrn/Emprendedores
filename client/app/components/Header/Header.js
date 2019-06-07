@@ -147,7 +147,7 @@ class Header extends Component {
     console.log(localStorage.getItem('the_main_app'));
     console.log("Login email = " + localStorage.getItem('email'));
     console.log(localStorage.getItem('Auth'));
-    this.updatethings();
+    //this.updatethings();
     if (localStorage.hasOwnProperty('the_main_app')) {
       this.setState({ isActive: true });
     }
@@ -157,8 +157,8 @@ class Header extends Component {
         Nutriologist: nutri[0].UserName
       })
     })
-    this.updatethings();
-    this.interval = setInterval(() => this.updatethings(), 1000);
+    //this.updatethings();
+    //this.interval = setInterval(() => this.updatethings(), 1000);
   }
 
   componentWillUnmount() {
@@ -251,7 +251,7 @@ class Header extends Component {
 
   logout() {
     this.setState({
-      isLoading: true
+      isLoading: true,
     });
     const obj = getFromStorage('the_main_app');
     if (obj && obj.token) {
@@ -316,7 +316,7 @@ class Header extends Component {
       )
     }
 
-    if (isActive && localStorage.getItem('Rol') == "Cliente") {
+    if (1) {
       return (
         <header>
           <nav className="navbar navbar-expand navbar-dark bg-dark static-top">
@@ -341,7 +341,7 @@ class Header extends Component {
                 <div className="input-group-append">{this.ActionLink2()}</div>
               </div>
             </form>
-              <a href="/vistaprincipal"><h6 style={{color: '#fff', marginRight: '5px', marginTop:'6px'}}>{user}</h6></a>
+              <a href="/vistaprincipal"><h6 style={{color: '#fff', marginRight: '5px', marginTop:'6px'}}>Jose Lopez</h6></a>
               <a style={{color:'#0676f8'}} className="toggle" onClick={
                 function(e) {
                   $(".sidebar").toggleClass('active');
@@ -502,8 +502,7 @@ class Header extends Component {
                   <ul style={{ listStyleType: "none", padding: 0 }}>
                   <li>
                     <Link
-                      id="chart"
-                      to="/charts"
+                      to="/corporalanalysis"
                       onClick={$("#menu-toggle").click()}
                     >
                       Analisis Corporal
@@ -520,7 +519,7 @@ class Header extends Component {
                     </Link>
                   </li>
                   <li>
-                    <Link id="" to="" onClick={$("#menu-toggle").click()}>
+                    <Link to="/transition" onClick={$("#menu-toggle").click()}>
                       Progreso
                     </Link>
                   </li>
